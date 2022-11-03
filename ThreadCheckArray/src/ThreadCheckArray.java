@@ -7,7 +7,8 @@ public class ThreadCheckArray implements Runnable
 	SharedData sd;
     ArrayList<Integer> array;
 	int b;
-	
+	/**
+	 * @ @param sd **/
 	public ThreadCheckArray(SharedData sd) 
 	{
 		this.sd = sd;	
@@ -18,7 +19,10 @@ public class ThreadCheckArray implements Runnable
 		}		
 		winArray = new boolean[array.size()];
 	}
-	
+	/**
+	 * @param n
+	 * @param b  
+	 * **/
 	void rec(int n, int b)
 	{
 		synchronized (sd) 
