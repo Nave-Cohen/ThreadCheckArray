@@ -41,7 +41,7 @@ public class ThreadCheckArray implements Runnable
 			return;
 		}
 		
-		rec(n-1, b - b==array.get(n-1));
+		rec(n-1, b -array.get(n-1));
 		if (flag)
 			winArray[n-1] = true;
 		synchronized (sd) 
